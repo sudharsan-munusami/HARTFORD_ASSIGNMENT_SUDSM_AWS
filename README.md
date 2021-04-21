@@ -91,8 +91,16 @@ Billing  information post 48 hours:
 Top free tier services by usage(EC2 has incurred 1.34% of the total free-tier usage):  
 ![image](https://user-images.githubusercontent.com/82586609/115176579-049ba500-a0eb-11eb-9dc5-0c68e6b2f1c1.png)  
 
-Tag:  
-![image](https://user-images.githubusercontent.com/82586609/115226956-74328400-a12d-11eb-84ba-65047b804847.png)  
+Billing information by Tags used(updated):  
+  
+![image](https://user-images.githubusercontent.com/82586609/115490134-18761100-a27b-11eb-817e-c51cbf0ae7dd.png)
+  
+![image](https://user-images.githubusercontent.com/82586609/115490160-25930000-a27b-11eb-9f51-352a790d691f.png)
+  
+![image](https://user-images.githubusercontent.com/82586609/115490182-304d9500-a27b-11eb-9244-2eccf189dd22.png)
+  
+![image](https://user-images.githubusercontent.com/82586609/115490205-40657480-a27b-11eb-9792-6352bc38a693.png)
+  
 
 
 NOTE:  
