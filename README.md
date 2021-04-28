@@ -32,12 +32,11 @@ Use sagemaker to preprocess housing data.
            
 ### Deploying the code in local machine  
 We will first deploy the code from our local machine before running it on SageMaker Notebook instance. This is done as follows:  
-  - The "xgboost_inbuilt_updated.ipynb" needs to be changed a little bit to deploy it in local machine.  
-  - We create a branch "local_deployment" in the repository for this purpose.  
+  - The "xgboost_inbuilt_updated.ipynb" needs to be changed a little bit to deploy it in local machine.   
   - Make the following changes in "xgboost_inbuilt_updated.ipynb"  
     - Change "role = get_execution_role()" and mention the role name directly. For eg, "role = 'role_name_here'".  
   - Open the Ubuntu terminal in your local machine and follow the below steps to preprocess:  
-    - Setup the Git environment by cloning into the "local_deployment" branch.  
+    - Setup the Git environment by cloning into the branch.  
     - Open a python virtual environment  
     - Install necessary packages (sagemaker, pandas, s3fs, fsspec)  
     - Configure aws using your access key and access ID  
