@@ -1,3 +1,6 @@
+# Review Branch  
+Once the assignment is reviewed,can be merged with Assignment2 branch  
+  
 # HARTFORD_ASSIGNMENT2_SUDSM_AWS  
 Assignment 2 as part of Hartford AWS SageMaker Assignment  
   
