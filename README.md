@@ -1,3 +1,6 @@
+# Review Branch  
+Once the assignment is reviewed,can be merged with Assignment2 branch  
+  
 # HARTFORD_ASSIGNMENT2_SUDSM_AWS  
 Assignment 2 as part of Hartford AWS SageMaker Assignment  
   
@@ -61,6 +64,14 @@ We will first deploy the code from our local machine before running it on SageMa
      ![Kiku](Images/All_Batchtrasnforms.png)  
   -   The preprocessed data will be stored in S3 as shown during local deployment  
     
+### Real time Transformation  
+  - Previously, we performed batch transform wherein we gave a predefined set od datapoints as inputs.   
+  - In real-time transform, we will invoke an endpoint and deploy our preprocessor in it.   
+  - By doing this we will be able to input a set of data points and get the processed outputs in real time. The below snippets show the same.  
+    ![Kiku](Images/Real_Time_Transform_1.png)  
+    ![Kiku](Images/Real_Time_Transform_2.png)  
+    ![Kiku](Images/Real_Time_Transform_3.png)  
+        
 ### Output Files  
 The preprocessed output files are kept in "Datasets" folder for reference.  
         
