@@ -17,5 +17,5 @@ dependencies:
       - matplotlib
       - seaborn
       - shap
-      - smexperiments
+      - sagemaker-experiments
       - smdebug
