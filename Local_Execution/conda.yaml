@@ -13,5 +13,11 @@ dependencies:
       - fsspec==0.7.4
       - scipy==1.5.4
       - sagemaker[local]
-
+      - s3fs
+      - matplotlib
+      - seaborn
+      - shap
+      - smexperiments
+      - smdebug
+    
 
