@@ -18,7 +18,6 @@ Create training model using sagemaker's own xgboost model.
   - XGBoost model is trained using the below hyperparameters:  
     ![Kiku](Images/hyperparameter.png)  
   - The hyper-parameter runs are associated with the sagemaker experiments and "train:rmse","validation:rmse" are logged.  
-    ![Kiku](Images/experiment.png)  
   - Once the training is completed, the below charts are created from Sagemaker experiment:  
     - num_round vs train:rmse  
       ![Kiku](Images/num_rounds_vs_train_rmse.png)  
