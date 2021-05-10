@@ -1,30 +1,53 @@
-# Review Branch  
-Once the assignment is reviewed,can be merged with Assignment2 branch  
-  
-# HARTFORD_ASSIGNMENT2_SUDSM_AWS  
-Assignment 2 as part of Hartford AWS SageMaker Assignment  
+# HARTFORD_ASSIGNMENT3_SUDSM_AWS  
+Assignment 3 as part of Hartford AWS SageMaker Assignment  
   
 ## Goal:  
-Use sagemaker to preprocess housing data.  
+Create training model using sagemaker's own xgboost model.  
   
 ## Procedure:  
   
 ### Create the required code  
-  - The data needs to be split into train and test  
-  - A SKLearn pipeline needs to be defined that takes in the data, does preprocessing and saves the output  
-  - The below structure is followed for the codes:  
-         ![Kiku](Images/File_structure.png)  
-  - The "Datasets" folder has the raw data for reference.  
-  - The Notebooks folder has 2 subfolders:  
-       - train_test_split : contains the code to split raw data to train and test. The train and test data are also saved here.  
-       - inbuilt-sagemaker-model: This folder has the below files  
-            - xgboost_inbuilt_updated.ipynb: The main code to preprocess the train and test data  
-            - sklearn_pipeline.py: This code specifies the SkLearn pipeline for preprocessing  
-            - dependencies.py: The dependency script for sklearn_pipeline.py  
-            - processed_train_data.csv: The final train data after preprocessing  
-            - processed_test_data.csv: The final test data after preprocessing  
-  - f. This is the entire code structure required for preprocessing  
-    
+  - The code is built on top of Assignment 2's code which handles pre-processing of data
+  - Therefore, many files in this branch would be common to Assignment 2.
+      - The only file of interest for assignment 3 is "xgboost_inbuilt_Assignment3.ipynb" at:
+        - Notebooks/inbuilt-sagemaker-model/xgboost_inbuilt_updated.ipynb
+
+### Steps
+
+  - The inbuilt XGBoost model is used. Before training the model, the debug paths, experiments are setup.
+  - XGBoost model is trained using the below hyperparameters:
+  -------------------hyperparameter
+  - The hyper-parameter runs are associated with the sagemaker experiments and "train:rmse","validation:rmse" are logged.
+  -----------------image
+  - Once the training is completed, the below charts are created from Sagemaker experiment:
+    - num_round vs train:rmse
+    - num_round vs validation:rmse
+    - gamma vs train:rmse
+    - gamma vs validation:rmse
+    - eta vs train:rmse
+    - eta vs validation:rmse
+    - max_depth vs train:rmse
+    - max_depth vs validation:rmse
+  - The best model is selected based on rmse score
+  ------------image
+  - For the selected best model, debugger is configured again 
+    - with "loss_not_decreasing" and "overfit" debugger rules
+    - To collect SHAP and feature values for the best model
+  - The best model is visualized and below plots are made
+    - Metrics vs num_rounds/Iteration 
+    - Feature-Importance (Weight and Cover) vs num_rounds/Iteration
+    - Average-SHAP values vs num_rounds/Iteration
+    - Global Explanations
+    - Local Explanations
+    - Stacked Force Plot
+    - Outlier Plots
+  - The built model is deployed using sagemaker endpoint
+
+
+Other information:
+
+
+
 ### Set-up AWS for preprocessing  
   - Create a new S3 bucket and store the input data:  
        - Create a new S3 bucket named "1905-assignment2-sm". Enable versioning and add tags. Created in "us-east-1"  
