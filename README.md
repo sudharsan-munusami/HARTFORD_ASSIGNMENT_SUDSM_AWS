@@ -1,3 +1,6 @@
+# Review Branch  
+Can be merged with branch "Assignment_3" after approval.  
+  
 # HARTFORD_ASSIGNMENT3_SUDSM_AWS  
 Assignment 3 as part of Hartford AWS SageMaker Assignment  
   
