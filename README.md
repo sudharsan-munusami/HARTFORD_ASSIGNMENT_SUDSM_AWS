@@ -58,8 +58,7 @@ Create training model using sagemaker's own xgboost model.
       ![Kiku](Images/Local_explanations_1.png)  
       ![Kiku](Images/Local_explanations_2.png)  
     - Stacked Force Plot  
-      - Stacked plot is throwing an error as shown below:  
-       ![Kiku](Images/stacked_force_plot.png)  
+       ![Kiku](Images/stacked_force_plot_1.png)    
     - Outlier Plots  
       ![Kiku](Images/outlier1.png)  
       ![Kiku](Images/outlier2.png)  
@@ -67,8 +66,8 @@ Create training model using sagemaker's own xgboost model.
       ![Kiku](Images/outlier4.png)  
       ![Kiku](Images/outlier5.png)  
       ![Kiku](Images/outlier6.png)  
-  - The built model is deployed using sagemaker endpoint  
-    - The endpoint is deployed successfully,however when predicting an error is faced.  
+  - The built model is deployed using sagemaker endpoint 
+      ![Kiku](Images/endpoint.png)    
   
 ### Other information:  
   
