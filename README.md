@@ -23,11 +23,12 @@ Logging each step of the model building process and deploying the final model in
     ![Kiku](Images/alltrials.png)  
   - The Pre-processing and XGBoost model are put into a pipeline as shown below.  
     ![Kiku](Images/endpoint1.png)  
-  - An endpoint is deployed using the pipeline.  
     ![Kiku](Images/endpoint2.png)  
-  - Predictions from the endpoint.   
+  - An endpoint is deployed using the pipeline.  
     ![Kiku](Images/endpoint3.png)  
     ![Kiku](Images/endpoint4.png)  
+  - Predictions from the endpoint.   
+    ![Kiku](Images/endpoint5.png)  
   - Many files in this branch would be common to Assignment 3.    
       - The only file of interest for assignment 4 is "xgboost_inbuilt_updated.ipynb" at:  
         - Notebooks/inbuilt-sagemaker-model/xgboost_inbuilt_updated.ipynb  
