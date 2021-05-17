@@ -1,3 +1,6 @@
+# Review Brach  
+This branch can be merged with "Assignment_4" once the PR is approved.  
+  
 # HARTFORD_ASSIGNMENT4_SUDSM_AWS  
 Assignment 4 as part of Hartford AWS SageMaker Assignment  
   
